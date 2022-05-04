@@ -1,7 +1,7 @@
 # K-corrections
 [![Python 3.7][python-image]][python-link]
 ![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
-![Sklearn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+[![Sklearn][sklearn-image]][sklearn-link]
 ![GitHub last commit](https://img.shields.io/github/last-commit/cfielder/K-corrections?style=for-the-badge)
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
@@ -12,6 +12,9 @@
 
 [python-image]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [python-link]: https://www.python.org/downloads/release/python-3710/
+
+[sklearn-image]: https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white
+[sklearn-link]: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.HuberRegressor.html
 
 
 Repository for functions and sample code to derive K-corrections for Fielder et al. 2022
