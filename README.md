@@ -1,13 +1,17 @@
 # K-corrections
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+[![Python 3.7][python-image]][python-link]
 ![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
 ![Sklearn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![GitHub last commit](https://img.shields.io/github/last-commit/cfielder/K-corrections?style=for-the-badge)
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
+
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+[python-image]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[python-link]: https://www.python.org/downloads/release/python-3710/
 
 
 Repository for functions and sample code to derive K-corrections for Fielder et al. 2022
