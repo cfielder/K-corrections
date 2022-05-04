@@ -37,29 +37,12 @@ such as the WISE (Wright et al. 2011) mid-infrared bands. For example, the stand
 dust emission models, which can result in incorrect K-corrections for bands W2, W3, and W4. With this code WISE band K-corrections
 can still be determined. For an example of this in practice see e.g., Fielder et al. 2021.
 
-## Description of Scripts
+For those interested in just the original photometry and K-corrected results please refer to the Catalogs folder.
 
-Gaussian Process Regression (GPR) is a machine learning approach to performing a fit. GPR is a statistical technique that 
-leverages information from both local information and global trends. In our application, the GPR uses a wide variety of 
-galaxies to capture information from global trends between galaxy structural properties and galaxy photometric properties.
-This allows us to predict an SED derived from photometric prediction based on the Milky Way's measured parameters.
+## Description of Script
+**The calc_correction_fit() function**
 
-We also provide some code for determining systematics - specifically Eddington bias. For those interested in obtaining
-k-corrections please refer to Fielder et al. 2021. In addition we provide code for calculating derivates as described by
-Fielder et al. 2021.
 
-For ease of use of all of these scripts, we will provide an example for a basic photometric prediction. We also provide 
-some functions for those interested in constructing SEDs.
-
-### Step 1:
-**Understand how mw_gp.py works**
-  - This entire function is built around the scikit-learn implementation of a Gaussian process regression algorithm. For more details
-    please refer to the documentation before proceeding: 
-    https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html
-  
-
-### Step 2:
-**Perform your photometric predictions** 
 
 
 
