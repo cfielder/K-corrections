@@ -11,8 +11,8 @@ def calc_correction_fit(
         redshift,
         sample_per_bin = 5000,
         color_name = "",
-        check_bins=False,
-        check_fits = False
+        check_bins = True,
+        check_fits = True
 
 ):
     """Assuming a rest-frame colour 0(X-Y) = (X-Y) - a1*z this function returns a1 where a1 is
@@ -65,11 +65,11 @@ def calc_correction_fit(
     #Reminder to check that there is approximately an equal number per bin!
     #The last bin is not useable
 
-    # Get coefficients from a fit of r-desired band observed vs. redshift
-    a0s = np.zeros((len(color_bins)-1))
+    #Define empty arrays to place calculations into
     a1s = np.zeros((len(color_bins)-1))
     nmads = np.zeros((len(color_bins)-1))
     mean_color = np.zeros((len(color_bins)-1))
+
     general_model = linear_model.HuberRegressor(epsilon=1.01)
 
     #Some nice organizational print statements
@@ -125,17 +125,15 @@ def calc_correction_fit(
         resid = y - pred_y
         mad = stats.median_absolute_deviation(resid)
         nmads[i-1] = (mad)
-        a0s[i-1] = (general_model.intercept_)
         a1s[i-1] = (general_model.coef_[0])
 
     #Finish the plot
     if check_fits:
         plt.xlabel("Redshift")
         plt.ylabel("({})".format(color_name))
-        leg = plt.legend(prop={'size': 12})
-        for lh in leg.legendHandles:
+        for lh in plt.legend().legendHandles:
             lh.set_alpha(1)
-            lh._sizes = [30]
+            lh._sizes = [20]
         plt.tight_layout()
         plt.show()
 
