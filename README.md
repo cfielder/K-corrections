@@ -113,6 +113,6 @@ Note that there is a <i>h = 5log<sub>10</sub>(0.7)</i> offset between Kcorrect a
 
 ## Authors
 
-* **Catherine Fielder** - *Code constriction* 
+* **Catherine Fielder** - *Code development* 
 
 With additional assistance from Brett Andrews and Jeff Newman.
