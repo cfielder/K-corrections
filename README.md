@@ -109,7 +109,7 @@ In the catalog folder we have provided our photometry and K-corrected results in
   - The rest-frame absolute magnitude (K-correct) photometry in AB magnitudes calculated in <a href="http://kcorrect.org">Kcorrect v4.3</a> (e.g., ```kcorrect_u```)
   - Our derived rest-frame colors, labelled according to the catalog they were derived from (e.g., ```restframe_rmu_gswlc``` or ```restframe_rmu_kcorrect```)
 
-Note that there is a <i>h = 5log<sub>10</sub>(0.7)<i> offset between Kcorrect absolute magnitudes and GSWLC-M2 magnitudes.
+Note that there is a <i>h = 5log<sub>10</sub>(0.7)</i> offset between Kcorrect absolute magnitudes and GSWLC-M2 magnitudes.
 
 ## Authors
 
