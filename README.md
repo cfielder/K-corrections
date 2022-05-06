@@ -44,7 +44,7 @@ such as the WISE (Wright et al. 2011) mid-infrared bands. For example, the stand
 dust emission models, which can result in incorrect K-corrections for bands W2, W3, and W4. With this code WISE band K-corrections
 can still be determined. For an example of this in practice see e.g., Fielder et al. 2021.
 
-For those interested in just the original photometry and K-corrected results please refer to the Catalogs GitHub repository.
+For those interested in just the original photometry and K-corrected results please refer to the Catalogs folder.
 
 ## Description of Script
 **The calc_correction_fit() Function**
@@ -98,6 +98,18 @@ Do determine the final <sup>0</sup>(<i>i-r</i>) we then need to take a couple mo
 
 For a detailed discussion on this algorithm refer to Section 2.3 of Fielder et al. 2022.
    
+## Description of Catalogs
+
+In the catalog folder we have provided our photometry and K-corrected results in the four splits described in Section 2.1 of Fielder et al. 2022. They are named with the relevant data. These files are provided as BZ2 compressed pickle files. In each catalog we provide:
+  - The GSWLC-M2 coordinates RA and Dec in degrees
+  - The GSWLC-M2 redshift (```GSWLC_z```)
+  - The relevant observed photometry in mJy (columns labelled as e.g., ```u``` or ```FUV```) and their errors in mJy (e.g., ```e_u``` or ```e_FUV```)
+  - The relevant observed photometry in AB magnitudes (e.g., ```observed_u_ab```) and their errors (e.g., ```observed_e_u_ab```)
+  - The rest-frame absolute magnitude (K-corrected) photometry in AB magnitudes calculated for GSWLC-M2, as described in <a href="https://ui.adsabs.harvard.edu/abs/2016ApJS..227....2S/abstract">Salim et al. 2016</a> and <a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...859...11S/abstract">Salim et al. 2018</a> and Section 2.2 of Fielder et al. 2022. Labelled as e.g., ```uabs``` or ```fabs```. We also include the associated errors (e.g., ```uabs_err``` or ```fabs_err  ```)
+  - The rest-frame absolute magnitude (K-correct) photometry in AB magnitudes calculated in <a href="http://kcorrect.org">Kcorrect v4.3</a> (e.g., ```kcorrect_u```)
+  - Our derived rest-frame colors, labelled according to the catalog they were derived from (e.g., ```restframe_rmu_gswlc``` or ```restframe_rmu_kcorrect```)
+
+Note that there is a <i>h = 5log<sub>10</sub>(0.7)<i> offset between Kcorrect absolute magnitudes and GSWLC-M2 magnitudes.
 
 ## Authors
 
